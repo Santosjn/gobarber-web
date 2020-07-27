@@ -3,6 +3,7 @@ import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -76,10 +77,10 @@ const SignIn: React.FC = () => {
           <a href="forgot">Esqueci minha Senha</a>
         </Form>
 
-        <a href="login">
+        <Link to="/signup">
           {' '}
           <FiLogIn /> Criar conta
-        </a>
+        </Link>
       </Content>
       <Background />
     </Container>
